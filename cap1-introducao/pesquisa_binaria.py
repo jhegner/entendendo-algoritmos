@@ -4,6 +4,8 @@ def pesquisa_binaria(lista, item):
     baixo = 0
     alto = len(lista) - 1
 
+    print('alto:', alto)
+
     while baixo <= alto :
         
         meio = (baixo + alto) // 2
@@ -18,7 +20,8 @@ def pesquisa_binaria(lista, item):
             baixo = meio + 1
     return 'Elemento nao encontrado na lista'
 
-minha_lista = [1,2,3,4,5,6,7,8,9,10]
+minha_lista = [1,3,5,7,9]
 
-print(pesquisa_binaria(minha_lista, 2))
+print(pesquisa_binaria(minha_lista, 30))
+
 
